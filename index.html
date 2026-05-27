@@ -222,9 +222,26 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
     <div class="nav-cta" onclick="nav('login')">Log in</div>
   </nav>
 
-  <div class="hero-center">
-    <p>Leading sentence / headline</p>
-    <div class="btn btn-filled" onclick="nav('login')">Log in</div>
+  <div style="display:flex;align-items:center;gap:40px;padding:40px 32px;border-bottom:1px solid #eee;background:#fff;">
+    <!-- Left: headline -->
+    <div style="flex:1;">
+      <p style="font-size:18px;font-weight:500;line-height:1.45;color:#111;max-width:380px;">Leading sentence / headline for PATH — a short, compelling description of the member portal and who it's for.</p>
+    </div>
+    <!-- Divider -->
+    <div style="width:1px;height:120px;background:#e0e0e0;flex-shrink:0;"></div>
+    <!-- Right: login form -->
+    <div style="width:260px;flex-shrink:0;">
+      <div style="font-size:11px;font-weight:600;margin-bottom:10px;">Member login</div>
+      <div class="field"><span class="lbl">Email</span><div class="inp"></div></div>
+      <div class="field"><span class="lbl">Password</span><div class="inp"></div></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
+        <div class="btn btn-filled" onclick="nav('dashboard')">Log in</div>
+        <span class="note" style="cursor:pointer;">Forgot password?</span>
+      </div>
+      <div style="margin-top:10px;font-size:9px;color:#888;border-top:1px solid #eee;padding-top:8px;">
+        Not a member? <span style="color:#111;cursor:pointer;font-weight:500;">Request access →</span>
+      </div>
+    </div>
   </div>
 
   <div class="body">
